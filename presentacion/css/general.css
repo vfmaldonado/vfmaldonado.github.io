@@ -1,0 +1,63 @@
+#sidebar 
+{ 
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background:#005580;
+    color: white;
+    box-sizing: border-box;
+} 
+.nav-link 
+{
+    color: white !important;
+}
+
+.cajaVideo
+{
+    height: 40%; 
+    width: 23%; 
+    position: fixed; 
+    top: 27%; 
+    left: 1%;
+    background-color:#032e61; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    border-radius: 15px 50px 30px;
+    color: white;
+}
+
+.piePagina {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #032e61;
+  color: white;
+  text-align: center;
+}
+
+.cajaAudio{
+    top: 27%; 
+    right: 5%;
+    position: fixed; 
+    margin: auto;
+    width: 20%;
+    padding: 0px;
+}
+
+.centrarLista {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .centrarListaImagen{
+    height: 40%; 
+    width: 23%; 
+    position: fixed; 
+    top: 27%; 
+    left: 50%;
+    padding-top: 20px;
+    color: white;
+
+  }

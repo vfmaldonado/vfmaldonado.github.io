@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Sierra Alta Operaciones Comerciales</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="title" content="Sierra Alta Operaciones Comerciales">
+        <meta name="author" content="Victor Maldonado" />
+        <meta name="copyright" content="Todos los derechos reservados 2020" />
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/vendor/leaflet.css"/>
+        <link rel="stylesheet" href="css/galeria.css"/>
+        <link rel="stylesheet" href="css/general.css"/>
+        <script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendor/popper.min.js"></script>
+        <script type="text/javascript" src="js/vendor/leaflet.js"></script>
+        <script type="text/javascript" src="js/init.js"></script>    
+    </head>
+    <body style="background: hsla(0,0%,98%,.9);">
+        <header>
+            <img src="images/logogris.png" width="30%" alt="sierraalta"/>      
+        </header>  
+        <div id="app" class="container"></div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background:#032e61; border-radius: 15px 50px 30px;">
+            <a class="navbar-brand" style="color: white;" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="nosotros" onclick="mostrarContenido('nosotros');">Nosotros <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="mision" onclick="mostrarContenido('mision');">Misión <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#" id="vision" onclick="mostrarContenido('vision');">Visión <span class="sr-only"></span></a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                                <a class="nav-link"  id="portafolio" href="paginas/portafolio.html">Portafolio <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="paginas/contacto.html" id="contacto">Contacto <span class="sr-only"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section>  
+                <article>
+                    <div id="galeria" style="width:800px; margin:0 auto;">
+                        <img height="300" src="images/Banner-Home-mms.png" class="active" />
+                        <img height="300" src="images/Banner-Home-retail.png"  />
+                        <img height="300" src="images/Banner-Home-tms.png"  />
+                    </div>
+                </article>    
+                <article>
+                    <div id="content" style=" width: 30%; margin: 0 auto; text-align: justify;">
+                        <h1 style="color:#28abe7 ;">Bienvenidos al Futuro.</h1>
+                        <p style="color:#032e61;">Una cadena de valor inteligente permite a las empresas un mejor control de sus procesos, implementar mejoras y generar ventajas.</p>
+                    </div>
+                </article>
+            </section>
+            <div class="cajaVideo">
+                <table>
+                    <tr>
+                        <td>
+                            <strong>Noticias de interes (Video)</strong>
+                        </td>
+                        <tr>
+                            <td>
+                                <video width="320" height="240" controls>
+                                    <source src="video/logistica.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+             </div>
+              <div class="piePagina">
+                  <p>Victor Maldonado Todos los derechos reservados 2020</p>
+            </div>
+            <div class="cajaAudio">
+                <table>
+                    <tr>
+                        <td><lable><strong>¡Play para escuchar el audio!</strong></lable></td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <audio id="controlAudio" controls autoplay>
+                                <source src="musica/fondoMusica.mp3" type="audio/mp3" >
+                            </audio>
+                        </td>
+                    </tr>
+                </table>
+            </div>            
+    </body>
+</html>

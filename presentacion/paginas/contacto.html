@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/vendor/leaflet.css"/>
+    <link rel="stylesheet" href="../css/galeria.css"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/popper.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/leaflet.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>    
+    <style>
+     #mapid 
+     { 
+         height: 250px;
+         width: 600%;
+    }
+    form {
+    width:60%; 
+    height: 200px;
+    }
+
+    table {
+    margin: 0 auto;
+    z-index: 1;
+    width:50%; 
+    height: 50px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logogris.png" width="30%" alt="sierraalta"/>      
+    </header>  
+    <div id="app" class="container"></div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background:#032e61; border-radius: 15px 50px 30px;">
+        <a class="navbar-brand" style="color: white;" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html" id="portafolio">Portafolio <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" id="contacto">Contacto <span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <section>  
+            <article>
+                <form id="frmContacto">
+                    <table>
+                        <tr>
+                            <td><label id='lblInformacion'><strong>REGISTRATE</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="lblNombre">*Nombre</label></td>
+                            <td><input type="text" id="txtNombre"/></td>
+                        </tr>
+                        <tr>
+                            <td><label id="lblTelefono">*Teléfono</label></td>
+                            <td><input type="text" id="txtTelefono"/></td>
+                        </tr>
+                        <tr>
+                            <td><label id="lblEmailContacto">*Email</label></td>
+                            <td><input type="text" id="txtEmail"/></td>
+                        </tr>
+                        <tr>
+                            <td><label id="lblUbicacion"><strong>Ubicación</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><div id="mapid"></div></td>
+                        </tr>
+                        <tr>
+                             <td><label id="lblDireccion"><strong>Dirección:</strong></label></td>
+                            <td><label>Edificio Valencia, Y, Vasco de Contreras, Quito</label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="lblDireccion"><strong>Teléfono:</strong></label></td>
+                            <td><label>(+593)997707485</label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="lblDireccion"><strong>Información:</strong></label></td>
+                            <td><label>info@sierraalta.com.ec</label></td>
+                         </tr>
+                    </table> 
+                </form>
+            </article>    
+          
+        </section>
+        <script type="text/javascript">
+            
+        $().ready(function () {
+            const mapa = L.map('mapid').setView([-0.3226432, -78.6089306], 10);
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributor',    
+                       //other attributes.
+            }).addTo(mapa);
+
+            L.marker([-0.3226432, -78.6089306]).addTo(mapa)
+            .bindPopup('<strong>Sierra Alta</strong><br>Operaciones Comerciales')
+            .openPopup();
+
+        });
+        </script>   
+</body>
+</html>
+
+
+
+

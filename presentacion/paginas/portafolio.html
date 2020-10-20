@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/vendor/leaflet.css"/>
+    <link rel="stylesheet" href="../css/galeria.css"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/popper.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/leaflet.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>    
+    <style>
+     #mapid 
+     { 
+         height: 250px;
+         width: 600%;
+    }
+    form {
+    width:60%; 
+    height: 200px;
+    }
+
+    table {
+    margin: 0 auto;
+    z-index: 1;
+    width:50%; 
+    height: 50px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logogris.png" width="30%" alt="sierraalta"/>      
+    </header>  
+    <div id="app" class="container"></div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background:#032e61; border-radius: 15px 50px 30px;">
+        <a class="navbar-brand" style="color: white;" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html" id="portafolio">Portafolio <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" id="contacto" >Contacto <span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <section>  
+            <article>
+                <form id="frmPortafolio">
+                    <div id="listadoProductos" class="centrarLista">
+                        <h2 style="color:#032e61 ;">Categoría de Productos</h2>
+                        <ol>
+                            <li>Bebidas y Lácteos</li>
+                            <li>Confitería</li>
+                            <li>Conservas y Enlatados</li>
+                            <li>Licores</li>
+                            <li>Limpieza y aseo</li>
+                            <li>Grasas y aceites</li>
+                        </ol> 
+                        
+                        <h2  style="color:#032e61 ;">Clientes Atendidos</h2>
+                        <ul>
+                            <li>Tiendas de barrio</li>
+                            <li>Minimarkets</li>
+                            <li>Mayoristas</li>
+                            <li>Oficinas</li>
+                        </ul>  
+                    </div>
+                    <div id="listaImagenes" class="centrarListaImagen">
+
+                        <table>
+                            <tr>
+                                <td><img src="../images/logistica.jpg"  alt="sierraalta"/>  </td>
+                            </tr>
+                            <tr>
+                                <td><img src="../images/retail.jpg" width="100%"   alt="sierraalta"/>  </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </article>    
+        </section>
+</body>
+</html>
+
+
+
+
